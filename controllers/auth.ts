@@ -3,10 +3,12 @@ import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 
 // REGISTER USER
-export const register = async (req, res) => {
+export const register = async (req: any, res) => {
     try {
         const { firstName, lastName, email, password, picturePath, friends, location, occupation } = req.body;
+        console.log("password ", req.body.password);
         const salt = await bcrypt.genSalt();
+        console.log("password ", password, " salt ", salt);
         const passwordHash = await bcrypt.hash(password, salt);
         const newUser = new User({
             firstName,
