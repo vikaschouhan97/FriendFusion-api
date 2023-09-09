@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "outDir": "./dist",
+    "rootDir": "./",
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "types": ["node"],
+    "lib": ["ESNext"],
+    "noEmit": true,
+    "incremental": true,
+    "allowImportingTsExtensions": true,
+    "moduleResolution": "bundler"
+  },
+  "ts-node": {
+    "esm": true,  
+  },
+}
