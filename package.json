@@ -31,7 +31,7 @@
   "scripts": {
     "start": "ts-node ./index.ts",
     "start:prod": "npm run build && node ./index.ts",
-    "build": "npx tsc"
+    "build": "npx run build"
   },
   "keywords": [],
   "author": "",
