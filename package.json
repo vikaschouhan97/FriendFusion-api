@@ -30,8 +30,8 @@
   },
   "scripts": {
     "start": "node --loader ts-node/esm index.ts",
-    "start:prod": "npm run build && node ./index.ts",
-    "build": "npx run build"
+    "start:prod": "npm run build && node ./build/index.js",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",

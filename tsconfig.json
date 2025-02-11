@@ -1,19 +1,18 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "outDir": "./dist",
+    "target": "ES6",
+    "module": "NodeNext",
+    "outDir": "./build",
     "rootDir": "./",
     "baseUrl": "./",
     "esModuleInterop": true,
     "types": ["node"],
     "lib": ["ESNext"],
-    "noEmit": true,
     "incremental": true,
-    "allowImportingTsExtensions": true,
-    "moduleResolution": "bundler"
+    "moduleResolution": "NodeNext",
+    "noEmit": false  // Now TypeScript will generate `.js` files
   },
   "ts-node": {
-    "esm": true,  
-  },
+    "esm": true
+  }
 }
